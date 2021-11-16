@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context=".Activity.GrupChatActivity">
+
+
+    <LinearLayout
+        android:padding="10dp"
+        android:background="@drawable/buttons"
+        android:id="@+id/grupAdiGosterme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/grupsGeriDon"
+            android:layout_gravity="center"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/back"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/grupAdiGoster"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Grup Adi Gösterme"
+            android:textColor="@android:color/background_light"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/grupMesajlarListesi"
+        android:layout_below="@+id/grupAdiGosterme"
+        android:layout_above="@+id/gruplinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:id="@+id/gruplinearLayout"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true">
+
+        <ImageButton
+            android:id="@+id/DosyaGonderButton"
+            android:src="@drawable/dosya"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@android:color/white"/>
+
+        <EditText
+            android:layout_toRightOf="@+id/DosyaGonderButton"
+            android:id="@+id/grupMesajGirdisi"
+            android:padding="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mesajınızı giriniz.."
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/grupMesajGonder"
+            android:src="@drawable/send"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/white"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

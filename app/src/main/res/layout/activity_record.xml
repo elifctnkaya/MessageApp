@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Activity.RecordActivity">
+
+    <ImageView
+        android:id="@+id/baslik"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/signup"
+        />
+
+    <EditText
+        android:id="@+id/recordEmail"
+        android:layout_below="@+id/baslik"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="   E-mail"
+        android:textSize="24sp"
+        android:inputType="textEmailAddress"
+        android:padding="4dp"
+        android:drawableLeft="@drawable/mail"
+        android:background="@drawable/login_background_layout"
+        />
+
+    <EditText
+        android:id="@+id/recordPassword"
+        android:layout_below="@id/recordEmail"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint="   Password"
+        android:textSize="24sp"
+        android:inputType="textPassword"
+        android:padding="4dp"
+        android:drawableLeft="@drawable/lock"
+        android:background="@drawable/login_background_layout"
+        />
+
+    <Button
+        android:id="@+id/recordButton"
+        android:layout_below="@id/recordPassword"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttons"
+        android:text="SIGN UP"
+        android:padding="8dp"
+        />
+
+    <TextView
+        android:id="@+id/recordedAccount"
+        android:layout_below="@id/recordButton"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="I have an account"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="4dp"
+        android:gravity="center_horizontal" />
+
+</RelativeLayout>
